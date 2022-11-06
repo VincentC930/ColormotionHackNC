@@ -18,9 +18,9 @@ changeSubtitlesStyle = () => {
                     for (const span of subtitles.childNodes) {
                         async function query(data) {
                             const response = await fetch(
-                                "https://api-inference.huggingface.co/models/michellejieli/emotion_text_classifier",
+                                "https://api-inference.huggingface.co/models/j-hartmann/emotion-english-distilroberta-base",
                                 {
-                                    headers: { Authorization: "Bearer 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" },
+                                    headers: { Authorization: "Bearer XYZ" },
                                     method: "POST",
                                     body: JSON.stringify(data),
                                 }
