@@ -2,6 +2,8 @@
 <img src="https://user-images.githubusercontent.com/74493352/200152323-3a74faf5-ea31-41c0-a1aa-df829d39d39f.png" alt="colormotion" width="200"/>
 
 ## Chrome Extension
+<img width="200" alt="Screen Shot 2022-11-05 at 11 25 31 PM" src="https://user-images.githubusercontent.com/74493352/200152696-ad70a016-02d3-4542-a9f3-8584848ff90b.png">
+
 1. Clone or download the chrome extension folder
 2. Navigate to the manage extensions tab in chrome
 3. Turn on developer mode
