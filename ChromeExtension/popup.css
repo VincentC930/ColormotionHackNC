@@ -1,0 +1,143 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  margin: 0px;
+  width: 200px;
+}
+
+.logocontainer {
+  padding: 2px 8px 2px 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.logoImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slider.round:before {
+  border-radius: 45%;
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+input:checked+.slider {
+  background-image: linear-gradient(to right, #0fc6eb, #7e198e);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.togglebody {
+  height: 40px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #ffffff;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.one{
+  background-color: #abaaa9;
+}
+
+.two{
+  background-color: #ffe058;
+}
+
+.three{
+  background-color: #f0a21a;
+}
+
+.four{
+  background-color: #21a0a1;
+}
+
+.five{
+  background-color: #ce1a39;
+}
+
+.six{
+  background-color: #353b89;
+}
+
+#main__imgOne{
+  height: 40px;
+  width:40px;
+}
+
+#main__imgTwo{
+  height: 40px;
+  width:40px;
+}
+
+#main__imgThree{
+  height: 40px;
+  width:40px;
+}
+
+#main__imgFour{
+  height: 40px;
+  width:40px;
+}
+
+#main__imgFive{
+  height: 40px;
+  width:40px;
+}
+
+#main__imgSix{
+  height: 40px;
+  width:40px;
+}
