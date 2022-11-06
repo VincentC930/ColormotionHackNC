@@ -1,0 +1,23 @@
+{
+  "name": "Colormotion",
+  "version": "1.0",
+  "description": "Colormotion",
+  "author": "Vincent and Max",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage",
+    "declarativeContent"
+  ],
+  "host_permissions": [
+    "https://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/colormotion.png"
+  },
+  "manifest_version": 3
+}
