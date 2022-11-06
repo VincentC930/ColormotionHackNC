@@ -1,4 +1,6 @@
 # Colormotion
+<img src="https://user-images.githubusercontent.com/74493352/200152323-3a74faf5-ea31-41c0-a1aa-df829d39d39f.png" alt="colormotion" width="200"/>
+
 ## Chrome Extension
 1. Clone or download the chrome extension folder
 2. Navigate to the manage extensions tab in chrome
@@ -7,6 +9,8 @@
 5. Turn on Colormotion and select any video of your choosing on Youtube
 
 ## Mobile Application
+<img src="https://user-images.githubusercontent.com/74493352/200152371-383f6edb-541c-4e11-b1eb-57f645bc0b5d.png" alt="appimg" width="200"/>
+
 ```
 expo start --dev-client
 ```
