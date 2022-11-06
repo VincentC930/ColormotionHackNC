@@ -34,16 +34,14 @@ export default function App() {
   }, []);
 
   const handleClick = () => {
-    // 👇️ toggle
+
     setIsActive(current => !current);
 
-    // 👇️ or set to true
-    // setIsActive(true);
   };
   const startSpeechToText = async () => {
     setResults([]);
     console.log(results)
-    await Voice.start("en-NZ");
+    await Voice.start("en-US");
     setStarted(true);
     // let emotion;
     // await callQuery();
@@ -109,14 +107,14 @@ export default function App() {
     // console.log(results);
     handleClick();
 
-    // // await callQuery(results[0]);
+    await callQuery(results[0]);
     // let emotion = findEmotionEmergency(results[0]);
     // determineEmotion(emotion);
     // // setCurrEmotion(emotion)
     // setCurrEmotion(emotion);
 
     setTimeout(() => {
-      let emotion = findEmotionEmergency(results[0]);
+      let emotion;
       determineEmotion(emotion);
       // setCurrEmotion(emotion)
       setCurrEmotion(emotion);
@@ -124,14 +122,7 @@ export default function App() {
       console.log(bgColor)
       console.log(results)
     }, 500);
-    // setTimeout(() => {
-    //   // emotion = output;
-    //   // console.log("a" + emotion);
-    //   // determineEmotion('joy');
-    //   // // setCurrEmotion(emotion)
-    //   // setCurrEmotion('joy');
-    //   // run = true;
-    // }, 500);
+
 
     // console.log(emotion)
 
@@ -144,42 +135,7 @@ export default function App() {
   const getBgColor = () => {
     return bgColor;
   }
-  const neutral = ["hello", "hi", "interesting"];
-  const anger = ["frustrated", "angry", "annoyed"];
-  const joy = ["happy", "joy", "great", "fun"];
-  const disgust = ["disgusting", "dirty"];
-  const sadness = ["sad", "upset", "cry", "mean"];
-  const surprise = ["shocked", "surprise", "unexpected"];
-  const fear = ["scared", "frightened"]
-  const findEmotionEmergency = (value) => {
-    let myArr = value.split(" ");
-    for (let i = 0; i < myArr.length; i++) {
-      if (neutral.includes(myArr[i])) {
-        return "neutral"
-      }
-      if (anger.includes(myArr[i])) {
-        return "anger"
-      }
-      if (sadness.includes(myArr[i])) {
-        return "sadness"
-      }
-      if (disgust.includes(myArr[i])) {
-        return "disgust"
-      }
-      if (fear.includes(myArr[i])) {
-        return "fear"
-      }
-      if (surprise.includes(myArr[i])) {
-        return "surprise"
-      }
-      if (joy.includes(myArr[i])) {
-        console.log(myArr[i])
-        return "joy"
-      }
 
-    }
-    return "neutral";
-  }
   const onSpeechError = (error) => {
     console.log(error);
   };
